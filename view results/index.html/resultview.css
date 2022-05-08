@@ -1,0 +1,28 @@
+#cover {
+    background:url('https://media.istockphoto.com/photos/overjoyed-happy-african-girl-student-celebrate-great-exam-results-picture-id1162624189?k=6&m=1162624189&s=170667a&w=0&h=OgJiorspCOBookYZvLsfMLOWHynlSBA_IqThNu9Uk74=') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#cover-caption {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* only used for background overlay not needed for centering */
+form:before {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.167);
+    z-index: -1;
+    border-radius: 10px;
+}
